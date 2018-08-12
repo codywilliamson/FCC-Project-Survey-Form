@@ -1,0 +1,81 @@
+<!-- 
+Cody Williamson
+FCC Survey Form
+--> 
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<title id="title">Survey Form</title>
+</head>
+
+<body>
+	<h1 id="title">Survey Form</h1>
+	
+	<div class="form-container">
+		<p id="description">Let me know what you think of this survey.</p>
+		<form id="survey-form" action="">
+			<div class="labels">
+				<label id="name-label" for="name" class="left">Name:</label>
+					<input autofocus id="name" type="textfield" class="input-field right" placeholder="What's your name?"required></input>
+				</div>
+			<div class="labels">
+				<label id="email-label" for="email" class="left">Email:</label>
+				<input id="email" type="email" class="input-field right" placeholder="Enter your email" required></input>
+	</div>
+			<div class="labels">
+				<label id="number-label" for="number" class="left">Age:</label>
+	<input id="number" type="number" class="input-field right" min="1" max="99" placeholder="How old are you?"></input>
+	</div>
+			<div class="labels">
+				<label id="dropdown-label" for="dropdown" class="left">What area of the US are you from?</label>
+				<select id="dropdown" class="right">
+					<option disabled value>Select an option...</option>
+					<option value="West">West</option>
+					<option value="South">South</option>
+					<option value="East">East</option>
+					<option value="North">North</option>
+				</select>
+</div>
+		<div class="labels">
+			<label id="radio-label" for="rating" class="left">How are you feeling so far about this survey in terms of aesthetic appeal and functionality?</label>
+			<ul style="list-style: none;" class="right">
+				<li class="radio-buttons">
+					<label for="rating">
+						<input type="radio" name="rating" value="1" class="userRating"> It's ok.</input></label>
+				</li>	
+			<li class="radio-buttons">
+				<label for="rating">
+					<input type="radio" name="rating" value="2" class="userRating"></input> It's pretty nice.</label>
+</li>
+			<li class="radio-buttons">
+				<label for="rating">
+					<input type="radio" name="rating" value="3" class="userRating"> You did an alright job, buddy ol' pal.</label>
+</li>
+</ul>
+	</div>
+		<div class="labels">
+			<label for="checkbox" class="left">What do you like best about this survey?</label>
+				<ul style="list-style: none;" class="right">
+					<li class="prefer">
+						<label><input type="checkbox" name="checkbox" value="1" class="userRating"> The visual appeal (colors, info flow, etc)</label>
+					</li>
+					<li class="prefer">
+							<label><input type="checkbox" name="checkox" value="2" class="userRating"> The typography</label>
+					</li>
+					<li class="prefer">
+						<label><input type="checkbox" name="checkbox" value="3" class="userRating"> Layout</label>
+					</li>
+					<li class="prefer">
+						<label><input type="checkbox" name="checkbox" value="4" class="userRating"> It really just kinda sucks dude.</label>
+					</li>
+				</ul>
+</div>
+				<div class="labels">
+					<label for="comments" class="left">Any suggestions?</label>
+					<textarea id="comments" class="input-field right" style="height: 50px; resize: vertical;" placeholder="Tell me what you think would be best..."></textarea>
+				</div>
+<button type="submit" id="submit">Submit</button>
+		</form>
+	</div>
+	
+	
+</body>
